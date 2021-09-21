@@ -1,4 +1,4 @@
-# See the new pose estimation TFLite Android sample [here](../../pose_estimation/android), which demonstrates both Posenet and Movenet models. This old Posenet sample will no longer be maintained.
+# See the new pose estimation TFLite Android sample [here](../pose_estimation), which demonstrates both Posenet and Movenet models. This old Posenet sample will no longer be maintained.
 
 <br/> <br/> <br/> <br/>
 
