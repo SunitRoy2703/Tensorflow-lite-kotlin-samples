@@ -46,7 +46,7 @@ Artistic style transfer is an optimization technique used to take two images: a 
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Coming Soon!
+### Coming Soon! 🚀
 
 **bert qa**
 
@@ -66,10 +66,11 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
 **image classification**
 
-## Goals
+## Goals📝
  - [ ] Adding all pre-existing example apps to the repo
  - [ ] Designing & Creating other apps using the new [Task API](https://www.tensorflow.org/lite/inference_with_metadata/task_library/overview)
  - [ ] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
  - [ ] Maintaining the Apps
 
- 
+ ## Contribute ❤️
+ You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new), mail me at iamsunitroy03@gmail.com
