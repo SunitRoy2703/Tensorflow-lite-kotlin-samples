@@ -67,7 +67,7 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 **image classification**
 
 ## Goals📝
- - [ ] Adding all pre-existing example apps to the repo
+ - [x] Adding all pre-existing example apps to the repo
  - [ ] Designing & Creating other apps using the new [Task API](https://www.tensorflow.org/lite/inference_with_metadata/task_library/overview)
  - [ ] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
  - [ ] Maintaining the Apps
