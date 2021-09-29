@@ -48,23 +48,27 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
 ### Coming Soon! 🚀
 
-**bert qa**
+**BERT qa**
 
-**speech commands**
+**Text classification**
 
-**smart reply**
+**Speech commands**
 
-**object detection**
+**Smart reply**
 
-**recommedation**
+**Object detection**
 
-**model personalization**
+**Recommedation**
 
-**super resolution**
+**Model personalization**
 
-**gesture detection**
+**Super resolution**
 
-**image classification**
+**Gesture detection**
+
+**Image classification**
+
+**Reinforcement learning**
 
 ## Goals📝
  - [x] Adding all pre-existing example apps to the repo
