@@ -46,6 +46,15 @@ Artistic style transfer is an optimization technique used to take two images: a 
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
+### Depth Estimation
+
+Perform realtime depth estimation using the MiDaS model available on [TensorFlow Hub](https://tfhub.dev/intel/midas/v2_1_small/1). This project is added from [shubham0204
+/
+Realtime_MiDaS_Depth_Estimation_Android](https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android). Refer to the [README](https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android/blob/master/README.md) for all the details.
+
+Added from: https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android
+
+
 ### Coming Soon! 🚀
 
 **BERT qa**
