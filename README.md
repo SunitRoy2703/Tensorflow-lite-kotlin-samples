@@ -77,4 +77,4 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
  - [ ] Maintaining the Apps
 
  ## Contribute ❤️
- You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new), mail me at iamsunitroy03@gmail.com
+ You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new) or mail me at iamsunitroy03@gmail.com
