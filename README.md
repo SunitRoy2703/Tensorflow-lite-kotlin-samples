@@ -7,6 +7,13 @@ So if you like to see the kotlin, you can go through the repo!
 
 ## Example apps
 
+### Depth Estimation
+
+An Android app which uses the MiDaS model to perform monocular depth estimation on RGB images directly. The app displays a depth map over the live camera feed and works for both the front and the rear cameras.
+
+
+Contributed from: https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android
+
 ### Digit classifier
 *End-to-end sample of a digit classifier model built with TensorFlow 2.0 (Keras API), and trained on MNIST dataset.*
 
@@ -45,14 +52,6 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 Artistic style transfer is an optimization technique used to take two images: a content image and a style reference image (such as an artwork by a famous painter) and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
-
-### Depth Estimation
-
-Perform realtime depth estimation using the MiDaS model available on [TensorFlow Hub](https://tfhub.dev/intel/midas/v2_1_small/1). This project is added from [shubham0204
-/
-Realtime_MiDaS_Depth_Estimation_Android](https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android). Refer to the [README](https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android/blob/master/README.md) for all the details.
-
-Added from: https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android
 
 
 ### Coming Soon! 🚀
