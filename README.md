@@ -14,33 +14,33 @@ An Android app which uses the MiDaS model to perform monocular depth estimation 
 
 Contributed from: https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android
 
-### Digit classifier
+### Digit Classifier
 *End-to-end sample of a digit classifier model built with TensorFlow 2.0 (Keras API), and trained on MNIST dataset.*
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Image segmentaion
+### Image Segmentation
 The used model, [DeepLab](https://ai.googleblog.com/2018/03/semantic-image-segmentation-with.html) is a state-of-art deep learning model for semantic image segmentation, where the goal is to assign semantic labels (e.g. person, dog, cat) to every pixel in the input image.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Optical character recognition
+### Optical Character Recognition
 OCR is the process of recognizing characters from images using computer vision and machine learning techniques. This reference app demos how to use TensorFlow Lite to do OCR. It uses a text detection model and a text recognition model as a pipeline to recognize texts.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Pose esimation
+### Pose Estimation
 This is an app that continuously detects the body parts in the frames seen by your device's camera. These instructions walk you through building and running the demo on an Android device. Camera captures are discarded immediately after use, nothing is stored or saved.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
 
-### Pose net
+### PoseNet
 This is an app that continuously detects the body parts in the frames seen by your device's camera. These instructions walk you through building and running the demo on an Android device. Camera captures are discarded immediately after use, nothing is stored or saved.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Sound classification
+### Sound Classification
 This Android application demonstrates how to classify sound on-device. It uses:
 
 - TFLite Task Library
@@ -48,15 +48,15 @@ This Android application demonstrates how to classify sound on-device. It uses:
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
-### Style transfer
+### Style Transfer
 Artistic style transfer is an optimization technique used to take two images: a content image and a style reference image (such as an artwork by a famous painter) and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
 
 Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
 
-### Coming Soon! 🚀
+## Coming Soon! 🚀
 
-**BERT qa**
+**BERT Q&A**
 
 **Text classification**
 
@@ -84,5 +84,5 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
  - [ ] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
  - [ ] Maintaining the Apps
 
- ## Contribute ❤️
+## Contribute ❤️
  You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new), mail me at iamsunitroy03@gmail.com
