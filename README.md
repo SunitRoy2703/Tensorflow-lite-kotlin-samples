@@ -50,7 +50,8 @@ Added from: https://github.com/tensorflow/examples/tree/master/lite/examples
 
 **BERT qa**
 
-**Text classification**
+**Text classification** 
+> In progress
 
 **Speech commands**
 
