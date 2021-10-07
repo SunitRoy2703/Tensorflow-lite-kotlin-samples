@@ -75,13 +75,7 @@ class MiDASModel( context: Context ) {
                 // Number of threads for computation
                 setNumThreads( NUM_THREADS )
             }
-            // Add the NNApiDelegate if supported.
-            // See -> https://www.tensorflow.org/lite/performance/nnapi#initializing_the_nnapi_delegate
-            if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.P ) {
-                Logger.logInfo( "NNAPI is supported on this device." )
-                addDelegate( NnApiDelegate() )
-            }
-        }
+          
         interpreter = Interpreter(FileUtil.loadMappedFile( context, modelFileName ) , interpreterOptions )
         Logger.logInfo( "TFLite interpreter created." )
     }
@@ -145,7 +139,5 @@ class MiDASModel( context: Context ) {
         }
 
     }
-
-
 
 }
