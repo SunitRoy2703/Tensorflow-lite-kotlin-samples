@@ -1,0 +1,10 @@
+apply plugin: 'de.undercouch.download'
+
+task downloadModelFile(type: Download) {
+    src 'https://tfhub.dev/intel/lite-model/midas/v2_1_small/1/lite/1?lite-format=tflite'
+    dest project.ext.ASSET_DIR + '/depth_model.tflite'
+    overwrite false
+}
+
+
+preBuild.dependsOn downloadModelFile
