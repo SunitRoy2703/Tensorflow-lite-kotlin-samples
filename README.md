@@ -1,5 +1,7 @@
 # TensorflowLite Examples Kotlin
 
+![TFLite kotlin samples-3](https://user-images.githubusercontent.com/67560900/136672009-78d66df5-a8cd-42c5-bf4b-c2efc60e8032.png)
+
 This repo contains the kotlin implementation of TensorflowLite Example Apps [here](https://github.com/tensorflow/examples/tree/master/lite/examples), which are mostly implemented in java rightnow.
 So if you like to see the kotlin, you can go through the repo!
 
