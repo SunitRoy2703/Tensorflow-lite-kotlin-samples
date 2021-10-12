@@ -1,15 +1,12 @@
-# Contribution Guideline    
+# Contribution Guidelines    
  Thank you for showing interest in this project, here are some guidelines for contributing to this project.
  - Star the project
  - Create issue your want to work on or check the existing ones
  - Fork the repo
  - Clone in to your local machine by running the following commands
 ``` 
-git clone https://github.com/Vidit-jindal/Hacktoberfest-2021.git
+git clone https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin.git
 
-or 
-
-gh repo clone Vidit-jindal/Hacktoberfest-2021
 ```
 - `cd` into the project folder you clone
 - Create branch by running `git checkout -b [branch name]`
@@ -19,8 +16,8 @@ gh repo clone Vidit-jindal/Hacktoberfest-2021
 git add .
 git commit -m "Commit message" //Something like "Bug fixed"
 ```
-- Push your changes to your local branch by running this commands
+- Push your changes to your GitHub repo
 ```
-git push oring [branch name] // Usually the branch name you create
+git push oringin [branch name] // Usually the branch name you create
 ```
 - Now go back to github and make your PR

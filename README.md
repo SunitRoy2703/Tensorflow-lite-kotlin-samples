@@ -84,13 +84,14 @@ Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/
 
 ## Goals📝
  - [x] Adding all pre-existing example apps to the repo
- - [] Designing & Creating other apps using the new [Task API](https://www.tensorflow.org/lite/inference_with_metadata/task_library/overview)
- - [] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
- - [] Maintaining the Apps
+ - [ ] Designing & Creating other apps using the new [Task API](https://www.tensorflow.org/lite/inference_with_metadata/task_library/overview)
+ - [ ] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
+ - [ ] Maintaining the Apps
 
  ## Contribute 🤝
- Contributions are welcome, checkout [contribution guideline](./CONTRIBUTING.md)
-<!--  ### You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new) or mail me at iamsunitroy03@gmail.com
-  -->
+ Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md)
+ ### You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new) or mail me at iamsunitroy03@gmail.com
+ 
  ### Join our discord channel to discuss about the project:
+ <br/>
  <a href="https://discord.gg/SBRfdXs7qD"><img src="https://user-images.githubusercontent.com/67560900/136423481-be79b2dd-9848-4171-8911-19295a3adc7c.png" width="80"></a>
