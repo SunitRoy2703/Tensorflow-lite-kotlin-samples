@@ -90,8 +90,7 @@ Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/
 
  ## Contribute 🤝
  Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md)
- ### You can just create new a [new issue](https://github.com/SunitRoy2703/Tensorflow-lite-samples-kotlin/issues/new) or mail me at iamsunitroy03@gmail.com
  
  ### Join our discord channel to discuss about the project:
- <br/>
  <a href="https://discord.gg/SBRfdXs7qD"><img src="https://user-images.githubusercontent.com/67560900/136423481-be79b2dd-9848-4171-8911-19295a3adc7c.png" width="80"></a>
+ ### Mail me at iamsunitroy03@gmail.com
