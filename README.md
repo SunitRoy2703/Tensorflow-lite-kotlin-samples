@@ -62,7 +62,8 @@ Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/
 
 **BERT Q&A**
 
-**Text classification**
+**Text classification** 
+> In progress
 
 **Speech commands**
 
