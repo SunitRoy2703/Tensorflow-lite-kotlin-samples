@@ -13,67 +13,42 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.tensorflow.lite.examples.textclassification;
+package org.tensorflow.lite.examples.textclassification
 
 /**
  * An immutable result returned by a TextClassifier describing what was classified.
  */
-public class Result implements Comparable<Result> {
+class Result(
     /**
      * A unique identifier for what has been classified. Specific to the class, not the instance of
      * the object.
      */
-    private final String id;
-
+    val id: String?,
     /**
      * Display name for the result.
      */
-    private final String title;
-
+    val title: String?,
     /**
      * A sortable score for how good the result is relative to others. Higher should be better.
      */
-    private final Float confidence;
+    val confidence: Float?
+) : Comparable<Result> {
 
-    public Result(final String id, final String title, final Float confidence) {
-        this.id = id;
-        this.title = title;
-        this.confidence = confidence;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public Float getConfidence() {
-        return confidence;
-    }
-
-    @Override
-    public String toString() {
-        String resultString = "";
+    override fun toString(): String {
+        var resultString = ""
         if (id != null) {
-            resultString += "[" + id + "] ";
+            resultString += "[$id] "
         }
-
         if (title != null) {
-            resultString += title + " ";
+            resultString += "$title "
         }
-
         if (confidence != null) {
-            resultString += String.format("(%.1f%%) ", confidence * 100.0f);
+            resultString += String.format("(%.1f%%) ", confidence * 100.0f)
         }
-
-        return resultString.trim();
+        return resultString.trim { it <= ' ' }
     }
 
-    @Override
-    public int compareTo(Result o) {
-        return o.confidence.compareTo(confidence);
+    override fun compareTo(o: Result): Int {
+        return o.confidence!!.compareTo(confidence!!)
     }
 }

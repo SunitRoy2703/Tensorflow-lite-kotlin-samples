@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'de.undercouch.download'
 
 android {
@@ -51,8 +52,13 @@ dependencies {
     testImplementation 'org.robolectric:robolectric:4.3'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "androidx.core:core-ktx:1.6.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 project(':app').tasks.withType(Test) {
     enabled = false
+}
+repositories {
+    mavenCentral()
 }
