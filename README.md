@@ -42,7 +42,7 @@ Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/
 ## PoseNet
 This is an app that continuously detects the body parts in the frames seen by your device's camera. These instructions walk you through building and running the demo on an Android device. Camera captures are discarded immediately after use, nothing is stored or saved.
 
-Added from: [this](https://github.com/tensorflow/examples/tree/master/lite/examples)
+Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
 ## Sound Classification
 This Android application demonstrates how to classify sound on-device. It uses:
@@ -57,13 +57,14 @@ Artistic style transfer is an optimization technique used to take two images: a 
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
+## Text classification
+This is an end-to-end example of movie review sentiment classification built with TensorFlow 2.0 (Keras API), and trained on IMDB dataset. The demo app processes input movie review texts, and classifies its sentiment into negative (0) or positive (1).
+
+Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
 ## Coming Soon! 🚀
 
 **BERT Q&A**
-
-**Text classification** 
-> In progress
 
 **Speech commands**
 
