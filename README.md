@@ -9,7 +9,7 @@ So if you like to see the kotlin, you can go through the repo!
 
 **Star ⭐️ this repo to support the project!**
 
-# Example apps
+# Example apps ✨
 
 ## Depth Estimation
 
@@ -96,3 +96,6 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
  ### Join our discord channel to discuss about the project:
  <a href="https://discord.gg/SBRfdXs7qD"><img src="https://user-images.githubusercontent.com/67560900/136423481-be79b2dd-9848-4171-8911-19295a3adc7c.png" width="80"></a>
  ### Mail me at iamsunitroy03@gmail.com
+ 
+ ## Contributors ❤️
+ ![](https://contrib.rocks/image?repo=SunitRoy2703/Tensorflow-lite-kotlin-samples)
