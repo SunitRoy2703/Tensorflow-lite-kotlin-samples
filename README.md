@@ -65,6 +65,7 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 ## Coming Soon! 🚀
 
 **BERT Q&A**
+>In Progress
 
 **Speech commands**
 
@@ -73,6 +74,7 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 **Object detection**
 
 **Recommedation**
+>In Progress
 
 **Model personalization**
 
