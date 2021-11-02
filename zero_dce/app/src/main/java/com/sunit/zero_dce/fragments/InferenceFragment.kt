@@ -3,6 +3,7 @@ package com.sunit.zero_dce.fragments
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.os.Handler
 import android.os.SystemClock
 import android.util.Log
 import android.view.*
@@ -32,7 +33,7 @@ class InferenceFragment : Fragment() {
     private val args: InferenceFragmentArgs by navArgs()
     private lateinit var filePath: String
     private lateinit var model: ZeroDce
-    private var modelType: Int = 0
+    private var handler: Handler? = null
 
     private val parentJob = Job()
     private val coroutineScope = CoroutineScope(
@@ -74,7 +75,7 @@ class InferenceFragment : Fragment() {
             //ByteBuffer.allocate(preprocessImage.byteCount)
        // preprocessImage.copyPixelsToBuffer(buffer)
 
-        model = ZeroDce.newInstance(requireContext())
+       // model = ZeroDce.newInstance(requireContext())
     // Creates inputs for reference.
         val inputFeature0 = TensorBuffer
             //.createDynamic(DataType.FLOAT32)
@@ -82,14 +83,20 @@ class InferenceFragment : Fragment() {
     //inputFeature0.loadBuffer(buffer, intArrayOf(1, 400, 600, 3))
         inputFeature0.loadBuffer(buffer)
         // Runs model inference and gets result.
-        val outputs = model.process(inputFeature0)
-        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+
+        var outputs: ZeroDce.Outputs? = null
+
+        handler!!.post{
+            outputs = model.process(inputFeature0)
+        }
+
+        val outputFeature0 = outputs?.outputFeature0AsTensorBuffer
 
     // Releases model resources if no longer used.
         model.close()
 
-        val postprocessImage = getOutputImage(outputFeature0.buffer)
-        return postprocessImage
+        val postprocessImage = outputFeature0?.let { getOutputImage(it.buffer) }
+        return postprocessImage!!
 
     }
 
@@ -144,7 +151,10 @@ class InferenceFragment : Fragment() {
 
         retainInstance = true
         filePath = args.rootDir
-
+        handler = Handler()
+        handler!!.post{
+            this.model = ZeroDce.newInstance(requireContext())
+        }
     }
 
     override fun onCreateView(
