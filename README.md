@@ -11,10 +11,15 @@ So if you like to see the kotlin, you can go through the repo!
 
 # Example apps ✨
 
+## Bert QnA
+
+This is an end-to-end example of BERT Question & Answer application built with TensorFlow 2.0, and tested on SQuAD dataset.
+
+Developed by: [Dhruv Nagarajan](https://github.com/dhruvnagarajan)
+
 ## Depth Estimation
 
 An Android app which uses the MiDaS model to perform monocular depth estimation on RGB images directly. The app displays a depth map over the live camera feed and works for both the front and the rear cameras.
-
 
 Contributed from: [this repo](https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android)
 
@@ -62,10 +67,13 @@ This is an end-to-end example of movie review sentiment classification built wit
 
 Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
-## Coming Soon! 🚀
+## Zero DCE 
 
-**BERT Q&A**
->In Progress
+Zero-Reference Deep Curve Estimation or Zero-DCE formulates low-light image enhancement as the task of estimating an image-specific tonal curve with a deep neural network.
+
+Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
+
+## Coming Soon! 🚀
 
 **Speech commands**
 
