@@ -109,3 +109,8 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
  
  ## Contributors ❤️
  ![](https://contrib.rocks/image?repo=SunitRoy2703/Tensorflow-lite-kotlin-samples)
+ 
+ ## License
+
+[Apache License 2.0](LICENSE)
+
