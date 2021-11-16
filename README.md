@@ -49,6 +49,11 @@ This is an app that continuously detects the body parts in the frames seen by yo
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
+## Recommedation
+This is an end-to-end example of recommendation application built with TensorFlow 2.0, and the model is trained based on the public MovieLens dataset. The dataset and model is used for research purpose. 
+
+Developed by: [Dhruv Nagarajan](https://github.com/dhruvnagarajan)
+
 ## Sound Classification
 This Android application demonstrates how to classify sound on-device. It uses:
 
