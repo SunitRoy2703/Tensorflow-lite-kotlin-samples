@@ -86,9 +86,6 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
 **Object detection**
 
-**Recommedation**
->In Progress
-
 **Model personalization**
 
 **Super resolution**
