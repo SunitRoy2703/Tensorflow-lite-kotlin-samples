@@ -72,7 +72,7 @@ This is an end-to-end example of movie review sentiment classification built wit
 
 Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
-## Zero DCE 
+## Zero DCE (incomplete)
 
 Zero-Reference Deep Curve Estimation or Zero-DCE formulates low-light image enhancement as the task of estimating an image-specific tonal curve with a deep neural network.
 
