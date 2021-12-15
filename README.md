@@ -80,6 +80,8 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
 ## Coming Soon! 🚀
 
+**On Device Training**
+
 **Speech commands**
 
 **Smart reply**
