@@ -1,5 +1,6 @@
 package com.sunit.zero_dce.fragments
 
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -15,10 +16,10 @@ import com.bumptech.glide.Glide
 import com.sunit.zero_dce.ImageUtils
 import com.sunit.zero_dce.MainActivity
 import com.sunit.zero_dce.R
-import com.sunit.zero_dce.ml.ZeroDce
 import kotlinx.android.synthetic.main.fragment_inference.*
 import kotlinx.coroutines.*
 import org.tensorflow.lite.DataType
+import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
@@ -26,13 +27,33 @@ import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.text.SimpleDateFormat
 import java.util.*
+import android.content.res.AssetFileDescriptor
+
+import android.content.res.AssetManager
+import java.io.FileInputStream
+import java.io.IOException
+import java.nio.MappedByteBuffer
+import java.nio.channels.FileChannel
+import org.tensorflow.lite.support.image.ops.Rot90Op
+
+import org.tensorflow.lite.support.image.ops.ResizeOp.ResizeMethod
+
+import org.tensorflow.lite.support.image.ops.ResizeOp
+
+import org.tensorflow.lite.support.image.ops.ResizeWithCropOrPadOp
+
+import org.tensorflow.lite.support.image.ImageProcessor
+
+
+
 
 
 class InferenceFragment : Fragment() {
 
     private val args: InferenceFragmentArgs by navArgs()
     private lateinit var filePath: String
-    private lateinit var model: ZeroDce
+    //private lateinit var model: ZeroDce
+    private lateinit var model: Interpreter
     private var handler: Handler? = null
 
     private val parentJob = Job()
@@ -66,36 +87,53 @@ class InferenceFragment : Fragment() {
 
     private fun inferenceWithZeroDCE(sourceImage: Bitmap): Bitmap {
 
-        val preprocessImage: Bitmap = Bitmap.createScaledBitmap(sourceImage, 400, 600, true)
-
-        Log.d("TagWidth", preprocessImage.width.toString())
-        Log.d("TagHeight", preprocessImage.height.toString())
-
-        val buffer: ByteBuffer = convertBitmapToByteBuffer(preprocessImage)
+//        val preprocessImage: Bitmap = Bitmap.createScaledBitmap(sourceImage, 400, 600, true)
+//
+//        Log.d("TagWidth", preprocessImage.width.toString())
+//        Log.d("TagHeight", preprocessImage.height.toString())
+//
+//        val buffer: ByteBuffer = convertBitmapToByteBuffer(preprocessImage)
             //ByteBuffer.allocate(preprocessImage.byteCount)
        // preprocessImage.copyPixelsToBuffer(buffer)
 
        // model = ZeroDce.newInstance(requireContext())
     // Creates inputs for reference.
-        val inputFeature0 = TensorBuffer
-            //.createDynamic(DataType.FLOAT32)
-           .createFixedSize(intArrayOf(BATCH_SIZE, 400, 600, PIXEL_SIZE), DataType.FLOAT32)
-    //inputFeature0.loadBuffer(buffer, intArrayOf(1, 400, 600, 3))
-        inputFeature0.loadBuffer(buffer)
+//        val inputFeature0 = TensorBuffer
+//            //.createDynamic(DataType.FLOAT32)
+//           .createFixedSize(intArrayOf(BATCH_SIZE, 400, 600, PIXEL_SIZE), DataType.FLOAT32)
+//    //inputFeature0.loadBuffer(buffer, intArrayOf(1, 400, 600, 3))
+//        inputFeature0.loadBuffer(buffer)
         // Runs model inference and gets result.
+//        handler!!.post{
+//            outputs = model.process(inputFeature0)
+//        }
 
-        var outputs: ZeroDce.Outputs? = null
+        //  val outputFeature0 = outputs?.outputFeature0AsTensorBuffer
+
+
+        val bitmap: Bitmap = Bitmap.createScaledBitmap(sourceImage, 400, 600, true)
+
+        Log.d("TagWidth", bitmap.width.toString())
+        Log.d("TagHeight", bitmap.height.toString())
+
+        val buffer: ByteBuffer = convertBitmapToByteBuffer(bitmap)
+        buffer.array()
+        Bitmap.
+
+
+        //val preprocessImage = loadImage(bitmap)
+        var outputs: ByteBuffer? = null
+
 
         handler!!.post{
-            outputs = model.process(inputFeature0)
+            model.run(buffer, outputs)
         }
 
-        val outputFeature0 = outputs?.outputFeature0AsTensorBuffer
 
     // Releases model resources if no longer used.
-        model.close()
+    //    model.close()
 
-        val postprocessImage = outputFeature0?.let { getOutputImage(it.buffer) }
+        val postprocessImage = outputs?.let { getOutputImage(it) }
         return postprocessImage!!
 
     }
@@ -152,10 +190,16 @@ class InferenceFragment : Fragment() {
         retainInstance = true
         filePath = args.rootDir
         handler = Handler()
+//        handler!!.post{
+//            this.model = ZeroDce.newInstance(requireContext())
+//        }
+        var tfliteFile = this.context?.let { loadModelFile(it, "zero-dce.tflite") }
         handler!!.post{
-            this.model = ZeroDce.newInstance(requireContext())
+            this.model = tfliteFile?.let { Interpreter(it) }!!
         }
-    }
+
+        }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -212,6 +256,36 @@ class InferenceFragment : Fragment() {
 
         return file.absolutePath
 
+    }
+
+    /** Load TF Lite model from assets.  */
+    @Throws(IOException::class)
+    private fun loadModelFile(context: Context, modelPath: String): MappedByteBuffer? {
+        context.assets.openFd(modelPath).use { fileDescriptor ->
+            FileInputStream(fileDescriptor.fileDescriptor).use { inputStream ->
+                val fileChannel: FileChannel = inputStream.getChannel()
+                val startOffset = fileDescriptor.startOffset
+                val declaredLength = fileDescriptor.declaredLength
+                return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
+            }
+        }
+    }
+
+    /** Loads input image, and applies preprocessing.  */
+    private fun loadImage(bitmap: Bitmap): TensorImage? {
+
+        val inputImageBuffer = TensorImage(DataType.FLOAT32)
+        inputImageBuffer.load(bitmap)
+        // Creates processor for the TensorImage.
+        val cropSize = Math.min(bitmap.width, bitmap.height)
+      //  val numRoration = sensorOrientation / 90
+        val imageProcessor: ImageProcessor = ImageProcessor.Builder()
+            .add(ResizeWithCropOrPadOp(cropSize, cropSize))
+          //  .add(ResizeOp(imageSizeX, imageSizeY, ResizeMethod.NEAREST_NEIGHBOR))
+           // .add(Rot90Op(numRoration))
+         //   .add(getPreprocessNormalizeOp())
+            .build()
+        return imageProcessor.process(inputImageBuffer)
     }
 
     companion object {

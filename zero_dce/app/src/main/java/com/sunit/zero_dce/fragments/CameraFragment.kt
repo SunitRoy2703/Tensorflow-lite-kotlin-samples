@@ -20,7 +20,6 @@ import androidx.navigation.fragment.findNavController
 import com.sunit.zero_dce.ImageUtils
 import com.sunit.zero_dce.MainActivity.Companion.getOutputDirectory
 import com.sunit.zero_dce.R
-import com.sunit.zero_dce.ml.ZeroDce
 import kotlinx.android.synthetic.main.fragment_camera.*
 import java.io.File
 import java.text.SimpleDateFormat

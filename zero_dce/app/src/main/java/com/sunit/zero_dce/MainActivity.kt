@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.FrameLayout
-import com.sunit.zero_dce.ml.ZeroDce
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
