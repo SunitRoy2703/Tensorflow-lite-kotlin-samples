@@ -9,9 +9,10 @@ So if you like to see the kotlin, you can go through the repo!
 
 **Star ⭐️ this repo to support the project!**
 
-# Example apps ✨
 
-## Bert QnA
+# Example apps ⭐️
+
+# Bert QnA
 
 This is an end-to-end example of BERT Question & Answer application built with TensorFlow 2.0, and tested on SQuAD dataset.
 
@@ -49,12 +50,12 @@ This is an app that continuously detects the body parts in the frames seen by yo
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
-## Recommedation
+## Recommedation :ghost:
 This is an end-to-end example of recommendation application built with TensorFlow 2.0, and the model is trained based on the public MovieLens dataset. The dataset and model is used for research purpose. 
 
 Developed by: [Dhruv Nagarajan](https://github.com/dhruvnagarajan)
 
-## Sound Classification
+## Sound part :musical_note:
 This Android application demonstrates how to classify sound on-device. It uses:
 
 - TFLite Task Library
@@ -62,41 +63,41 @@ This Android application demonstrates how to classify sound on-device. It uses:
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
-## Style Transfer
+## Style Transfer:high_brightness:
 Artistic style transfer is an optimization technique used to take two images: a content image and a style reference image (such as an artwork by a famous painter) and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
-## Text classification
+## Text classification :books:
 This is an end-to-end example of movie review sentiment classification built with TensorFlow 2.0 (Keras API), and trained on IMDB dataset. The demo app processes input movie review texts, and classifies its sentiment into negative (0) or positive (1).
 
 Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
-## Zero DCE (incomplete)
+## :bookmark: Zero DCE (incomplete) 
 
 Zero-Reference Deep Curve Estimation or Zero-DCE formulates low-light image enhancement as the task of estimating an image-specific tonal curve with a deep neural network.
 
 Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
 
-## Coming Soon! 🚀
+## :pushpin: Coming Soon! 
 
-**On Device Training**
+**:paperclip:On Device Training**
 
-**Speech commands**
+**:paperclip:Speech commands**
 
-**Smart reply**
+**:paperclip:Smart reply**
 
-**Object detection**
+**:paperclip:Object detection**
 
-**Model personalization**
+**:paperclip:Model personalization**
 
-**Super resolution**
+**:paperclip:Super resolution**
 
-**Gesture detection**
+**:paperclip:Gesture detection**
 
-**Image classification**
+**:paperclip:Image classification**
 
-**Reinforcement learning**
+**:paperclip:Reinforcement learning**
 
 ## Goals📝
  - [x] Adding all pre-existing example apps to the repo
@@ -104,14 +105,15 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
  - [ ] Designing & Creating example apps with the [Interpreter](https://www.tensorflow.org/lite/inference_with_metadata/lite_support), to show the implementation.
  - [ ] Maintaining the Apps
 
- ## Contribute 🤝
- ### Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md)
+ ## :collision:Contribute 🤝
+ #### :wave: Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md) :memo:
  
- ### Join our discord channel to discuss about the project:
+ #### :smiling_imp: Join our discord channel to discuss about the project:
  <a href="https://discord.gg/SBRfdXs7qD"><img src="https://user-images.githubusercontent.com/67560900/136423481-be79b2dd-9848-4171-8911-19295a3adc7c.png" width="80"></a>
- ### Mail me at iamsunitroy03@gmail.com
+
+##### :muscle:Email : iamsunitroy03@gmail.com
  
- ## Contributors ❤️
+ ## Contributors :eyes:
  ![](https://contrib.rocks/image?repo=SunitRoy2703/Tensorflow-lite-kotlin-samples)
  
  ## License
