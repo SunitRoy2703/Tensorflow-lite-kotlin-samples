@@ -50,8 +50,8 @@ This is an app that continuously detects the body parts in the frames seen by yo
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
-## Recommedation :ghost:
-This is an end-to-end example of recommendation application built with TensorFlow 2.0, and the model is trained based on the public MovieLens dataset. The dataset and model is used for research purpose. 
+## Recommedation  :collision:
+This application built with TensorFlow 2.0, and the model is trained based on the public MovieLens dataset. The dataset and model is used for research purpose. 
 
 Developed by: [Dhruv Nagarajan](https://github.com/dhruvnagarajan)
 
@@ -106,12 +106,12 @@ Developed by: [Sunit Roy](https://github.com/SunitRoy2703)
  - [ ] Maintaining the Apps
 
  ## :collision:Contribute 🤝
- #### :wave: Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md) :memo:
+ ### :wave: Contributions are welcome, checkout [contribution guidelines](./CONTRIBUTING.md) :memo:
  
- #### :smiling_imp: Join our discord channel to discuss about the project:
+ ### :smiling_imp: Join our discord channel to discuss about the project:
  <a href="https://discord.gg/SBRfdXs7qD"><img src="https://user-images.githubusercontent.com/67560900/136423481-be79b2dd-9848-4171-8911-19295a3adc7c.png" width="80"></a>
 
-##### :muscle:Email : iamsunitroy03@gmail.com
+### :muscle:Email : iamsunitroy03@gmail.com
  
  ## Contributors :eyes:
  ![](https://contrib.rocks/image?repo=SunitRoy2703/Tensorflow-lite-kotlin-samples)
