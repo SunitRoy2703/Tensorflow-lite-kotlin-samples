@@ -40,7 +40,7 @@ OCR is the process of recognizing characters from images using computer vision a
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
 ## Pose Estimation
-This is an app that continuously detects the body parts in the frames seen by your device's camera. These instructions walk you through building and running the demo on an Android device. Camera captures are discarded immediately after use, nothing is stored or saved.
+This is an app that continuously detects the body parts in the frames seen by your device's camera. These instructions walk you through building and running the demo on an Android device. In this  Camera captures are discarded immediately after use, nothing is stored or saved.
 
 Added from: [this repo](https://github.com/tensorflow/examples/tree/master/lite/examples)
 
