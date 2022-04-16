@@ -9,6 +9,7 @@ So if you like to see the kotlin, you can go through the repo!
 
 **Star ⭐️ this repo to support the project!**
 
+**Congrats the project got accepted to [Google Dev Library](https://devlibrary.withgoogle.com/products/ml/repos/SunitRoy2703-Tensorflow-lite-kotlin-samples) 🎉🎉**
 
 # Example apps ⭐️
 
